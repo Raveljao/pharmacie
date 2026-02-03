@@ -1,5 +1,5 @@
 "use client";
-
+export const dynamic = "force-dynamic";
 import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -99,8 +99,8 @@ function CatalogueInner() {
                         <button
                             onClick={() => setSelectedCategory("")}
                             className={`flex-shrink-0 px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] whitespace-nowrap transition-all border-2 rounded-sm ${selectedCategory === ""
-                                    ? "bg-blue-600 text-white border-blue-600 shadow-lg"
-                                    : "bg-white text-slate-500 border-slate-200 hover:border-blue-300 hover:text-slate-800"
+                                ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+                                : "bg-white text-slate-500 border-slate-200 hover:border-blue-300 hover:text-slate-800"
                                 }`}
                         >
                             {t("allCategories")}
@@ -111,8 +111,8 @@ function CatalogueInner() {
                                 key={cat}
                                 onClick={() => setSelectedCategory(cat)}
                                 className={`flex-shrink-0 px-6 py-3 text-xs font-bold uppercase tracking-[0.12em] whitespace-nowrap transition-all border-2 rounded-sm ${selectedCategory === cat
-                                        ? "bg-blue-600 text-white border-blue-600 shadow-lg"
-                                        : "bg-white text-slate-500 border-slate-200 hover:border-blue-300 hover:text-slate-800"
+                                    ? "bg-blue-600 text-white border-blue-600 shadow-lg"
+                                    : "bg-white text-slate-500 border-slate-200 hover:border-blue-300 hover:text-slate-800"
                                     }`}
                             >
                                 {cat}
@@ -123,8 +123,8 @@ function CatalogueInner() {
                     <label className="flex items-center gap-3 cursor-pointer select-none">
                         <div
                             className={`w-6 h-6 flex items-center justify-center border-2 transition-colors rounded-sm ${showAvailableOnly
-                                    ? "bg-blue-600 border-blue-600"
-                                    : "bg-white border-slate-300"
+                                ? "bg-blue-600 border-blue-600"
+                                : "bg-white border-slate-300"
                                 }`}
                         >
                             {showAvailableOnly && (
