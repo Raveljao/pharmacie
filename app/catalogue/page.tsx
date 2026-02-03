@@ -13,21 +13,17 @@ function CatalogueInner() {
     const { t } = useLanguage();
     const searchParams = useSearchParams();
 
-    const [searchQuery, setSearchQuery] = useState(() => {
-        if (typeof window !== 'undefined') {
-            const params = new URLSearchParams(window.location.search);
-            return params.get("search") || "";
-        }
-        return "";
-    });
-    const [selectedCategory, setSelectedCategory] = useState(() => {
-        if (typeof window !== 'undefined') {
-            const params = new URLSearchParams(window.location.search);
-            return params.get("category") || "";
-        }
-        return "";
-    });
+    const [searchQuery, setSearchQuery] = useState("");
+    const [selectedCategory, setSelectedCategory] = useState("");
     const [showAvailableOnly, setShowAvailableOnly] = useState(false);
+
+    // Initialize from searchParams after mount
+    useEffect(() => {
+        const search = searchParams.get("search");
+        const category = searchParams.get("category");
+        if (search) setSearchQuery(search);
+        if (category) setSelectedCategory(category);
+    }, [searchParams]);
 
     const categories = useMemo(
         () => Array.from(new Set(products.map((p) => p.categorie))),
