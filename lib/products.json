@@ -1,0 +1,302 @@
+[
+    {
+        "id": "1",
+        "nom": "Paracétamol 500mg",
+        "nom_mg": "Paracetamol 500mg",
+        "prix": 2000,
+        "categorie": "Antidouleur",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Traitement de la douleur et de la fièvre"
+    },
+    {
+        "id": "2",
+        "nom": "Ibuprofène 400mg",
+        "nom_mg": "Ibuprofen 400mg",
+        "prix": 3500,
+        "categorie": "Anti-inflammatoire",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Anti-inflammatoire non stéroïdien"
+    },
+    {
+        "id": "3",
+        "nom": "Amoxicilline 500mg",
+        "nom_mg": "Amoxicilline 500mg",
+        "prix": 8000,
+        "categorie": "Antibiotique",
+        "disponible": true,
+        "ordonnance_requise": true,
+        "description": "Antibiotique à large spectre"
+    },
+    {
+        "id": "4",
+        "nom": "Vitamine C 1000mg",
+        "nom_mg": "Vitamin C 1000mg",
+        "prix": 5000,
+        "categorie": "Vitamines",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Complément alimentaire"
+    },
+    {
+        "id": "5",
+        "nom": "Sirop contre la toux",
+        "nom_mg": "Sirop ho an'ny kohaka",
+        "prix": 6500,
+        "categorie": "Respiratoire",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Soulage la toux sèche et grasse"
+    },
+    {
+        "id": "6",
+        "nom": "Aspirine 100mg",
+        "nom_mg": "Aspirin 100mg",
+        "prix": 1500,
+        "categorie": "Antidouleur",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Antiagrégant plaquettaire"
+    },
+    {
+        "id": "7",
+        "nom": "Oméprazole 20mg",
+        "nom_mg": "Omeprazole 20mg",
+        "prix": 4500,
+        "categorie": "Digestif",
+        "disponible": true,
+        "ordonnance_requise": true,
+        "description": "Traitement des ulcères gastriques"
+    },
+    {
+        "id": "8",
+        "nom": "Crème hydratante",
+        "nom_mg": "Crème hydratante",
+        "prix": 12000,
+        "categorie": "Dermatologie",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Hydratation de la peau"
+    },
+    {
+        "id": "9",
+        "nom": "Collyre oculaire",
+        "nom_mg": "Collyre ho an'ny maso",
+        "prix": 7500,
+        "categorie": "Ophtalmologie",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Soulage les yeux secs et irrités"
+    },
+    {
+        "id": "10",
+        "nom": "Metformine 850mg",
+        "nom_mg": "Metformine 850mg",
+        "prix": 9500,
+        "categorie": "Diabète",
+        "disponible": true,
+        "ordonnance_requise": true,
+        "description": "Traitement du diabète de type 2"
+    },
+    {
+        "id": "11",
+        "nom": "Losartan 50mg",
+        "nom_mg": "Losartan 50mg",
+        "prix": 11000,
+        "categorie": "Cardiovasculaire",
+        "disponible": true,
+        "ordonnance_requise": true,
+        "description": "Traitement de l'hypertension"
+    },
+    {
+        "id": "12",
+        "nom": "Gel désinfectant",
+        "nom_mg": "Gel désinfectant",
+        "prix": 3000,
+        "categorie": "Hygiène",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Désinfection des mains"
+    },
+    {
+        "id": "13",
+        "nom": "Masques chirurgicaux (boîte de 50)",
+        "nom_mg": "Masques chirurgicaux (50)",
+        "prix": 15000,
+        "categorie": "Hygiène",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Protection respiratoire"
+    },
+    {
+        "id": "14",
+        "nom": "Thermomètre digital",
+        "nom_mg": "Thermomètre digital",
+        "prix": 18000,
+        "categorie": "Matériel médical",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Mesure précise de la température"
+    },
+    {
+        "id": "15",
+        "nom": "Pansements assortis",
+        "nom_mg": "Pansements",
+        "prix": 4000,
+        "categorie": "Matériel médical",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Protection des plaies"
+    },
+    {
+        "id": "16",
+        "nom": "Loratadine 10mg",
+        "nom_mg": "Loratadine 10mg",
+        "prix": 5500,
+        "categorie": "Allergie",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Traitement des allergies"
+    },
+    {
+        "id": "17",
+        "nom": "Ciprofloxacine 500mg",
+        "nom_mg": "Ciprofloxacine 500mg",
+        "prix": 12000,
+        "categorie": "Antibiotique",
+        "disponible": false,
+        "ordonnance_requise": true,
+        "description": "Antibiotique fluoroquinolone"
+    },
+    {
+        "id": "18",
+        "nom": "Spray nasal décongestionnant",
+        "nom_mg": "Spray ho an'ny orona",
+        "prix": 6000,
+        "categorie": "Respiratoire",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Décongestion nasale rapide"
+    },
+    {
+        "id": "19",
+        "nom": "Multivitamines",
+        "nom_mg": "Multivitamines",
+        "prix": 8500,
+        "categorie": "Vitamines",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Complément vitaminique complet"
+    },
+    {
+        "id": "20",
+        "nom": "Crème anti-fongique",
+        "nom_mg": "Crème anti-fongique",
+        "prix": 9000,
+        "categorie": "Dermatologie",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Traitement des mycoses cutanées"
+    },
+    {
+        "id": "21",
+        "nom": "Lait corporel bébé",
+        "nom_mg": "Lait ho an'ny zaza",
+        "prix": 14000,
+        "categorie": "Bébé",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Hydratation douce pour bébé"
+    },
+    {
+        "id": "22",
+        "nom": "Couches bébé (pack 30)",
+        "nom_mg": "Couches bébé (30)",
+        "prix": 25000,
+        "categorie": "Bébé",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Couches ultra-absorbantes"
+    },
+    {
+        "id": "23",
+        "nom": "Solution de réhydratation orale",
+        "nom_mg": "Solution réhydratation",
+        "prix": 3500,
+        "categorie": "Digestif",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Traitement de la déshydratation"
+    },
+    {
+        "id": "24",
+        "nom": "Calcium + Vitamine D",
+        "nom_mg": "Calcium + Vitamin D",
+        "prix": 7000,
+        "categorie": "Vitamines",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Renforcement osseux"
+    },
+    {
+        "id": "25",
+        "nom": "Atorvastatine 20mg",
+        "nom_mg": "Atorvastatine 20mg",
+        "prix": 13500,
+        "categorie": "Cardiovasculaire",
+        "disponible": true,
+        "ordonnance_requise": true,
+        "description": "Traitement du cholestérol"
+    },
+    {
+        "id": "26",
+        "nom": "Sérum physiologique (lot de 10)",
+        "nom_mg": "Sérum physiologique (10)",
+        "prix": 5000,
+        "categorie": "Hygiène",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Nettoyage nez et yeux"
+    },
+    {
+        "id": "27",
+        "nom": "Antiacide",
+        "nom_mg": "Antiacide",
+        "prix": 4500,
+        "categorie": "Digestif",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Soulagement des brûlures d'estomac"
+    },
+    {
+        "id": "28",
+        "nom": "Baume du tigre",
+        "nom_mg": "Baume du tigre",
+        "prix": 8000,
+        "categorie": "Antidouleur",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Soulagement des douleurs musculaires"
+    },
+    {
+        "id": "29",
+        "nom": "Préservatifs (boîte de 12)",
+        "nom_mg": "Préservatifs (12)",
+        "prix": 6000,
+        "categorie": "Contraception",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Protection et contraception"
+    },
+    {
+        "id": "30",
+        "nom": "Test de grossesse",
+        "nom_mg": "Test de grossesse",
+        "prix": 8500,
+        "categorie": "Contraception",
+        "disponible": true,
+        "ordonnance_requise": false,
+        "description": "Détection précoce de grossesse"
+    }
+]
