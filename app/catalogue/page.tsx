@@ -1,5 +1,5 @@
 "use client";
-export const dynamic = "force-dynamic";
+
 import { useEffect, useMemo, useState, Suspense } from "react";
 import { useSearchParams } from "next/navigation";
 import { useLanguage } from "@/contexts/LanguageContext";
@@ -7,20 +7,27 @@ import ProductCard from "@/components/ProductCard";
 import products from "@/lib/products.json";
 import type { Product } from "@/lib/types";
 
+export const dynamic = "force-dynamic";
+
 function CatalogueInner() {
     const { t } = useLanguage();
     const searchParams = useSearchParams();
 
-    const [searchQuery, setSearchQuery] = useState("");
-    const [selectedCategory, setSelectedCategory] = useState("");
+    const [searchQuery, setSearchQuery] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            return params.get("search") || "";
+        }
+        return "";
+    });
+    const [selectedCategory, setSelectedCategory] = useState(() => {
+        if (typeof window !== 'undefined') {
+            const params = new URLSearchParams(window.location.search);
+            return params.get("category") || "";
+        }
+        return "";
+    });
     const [showAvailableOnly, setShowAvailableOnly] = useState(false);
-
-    useEffect(() => {
-        const search = searchParams.get("search");
-        const category = searchParams.get("category");
-        if (search) setSearchQuery(search);
-        if (category) setSelectedCategory(category);
-    }, [searchParams]);
 
     const categories = useMemo(
         () => Array.from(new Set(products.map((p) => p.categorie))),
